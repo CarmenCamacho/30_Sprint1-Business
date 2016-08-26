@@ -1,0 +1,53 @@
+.navbar{
+	color: white !important;
+	font-weight: bold;
+}
+.mb-5{
+	margin-bottom: 5%;
+ }
+
+.pd-0{
+	padding:0;
+	margin: 0;
+}
+
+.m-0{
+	margin: 0;
+}
+
+.pb-5{
+	padding-bottom: 5%;
+}
+
+.pt-5{
+	padding-top: 5%;
+}
+.mt-15{
+	padding-top: 15%;
+}
+.pt-10{
+	padding-top: 10%;
+}
+.fit{
+	width: 100%;
+}
+.text-white{
+	color: white !important;
+}
+.logo{
+	width: 50%;
+}
+
+.fondomain{
+	background-image: url(../image/large.jpg);
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	height: 600px;
+	/*PONER UN FILTRO A IMG PARA QUITAR BRILLO*/
+}
+
+.fondoazul{
+	background-color: rgba(46, 115, 255, 0.7);
+	background-position: bottom;
+
+}
