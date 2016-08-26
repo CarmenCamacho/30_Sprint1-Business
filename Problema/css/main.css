@@ -78,7 +78,7 @@
 	color: #37C;
 }
 .text-cyan{
-	color: cyan;
+	color: #3AF;
 }
 .logo{
 	width: 50%;
@@ -125,11 +125,13 @@
      filter: drop-shadow(4px 3px 3px silver);
      border: 1px solid grey;
      margin: auto;
+     color:white;
 }
 
 .circulo:hover{
-	background-color: cyan;
+	background-color: #3AF;
 	border: none;
+	-webkit-filter: drop-shadow(4px 3px 3px white);  
 }
 .icon-big{
 	font-size: 4em;
