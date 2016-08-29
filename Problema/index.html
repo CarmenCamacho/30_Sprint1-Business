@@ -8,6 +8,8 @@
 	  	<link rel="stylesheet" href="css/icomoon.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/contact.html">
+		<link rel="stylesheet" href="css/animate.css">
 	  	<title>User Testing 360°</title>
 	</head>
 	<body>
@@ -15,21 +17,21 @@
 		<div class="filtro">
 		<header>
 				<div class="row">
-					<nav class="navbar navbar-fixed-top" role="navigation" name="#home">
+					<nav class="nav navbar navbar-fixed-top" role="navigation" name="#home">
 	    				<div class="container">
 		            		<div class="navbar-header">
 			              	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra1">
 				            	<span class="sr-only">Menú</span>
-				            	<span class="fa fa-navicon fa-2x"></span>  <!-- MENU  HAMBURGUESA CON UN SOLO ICONO -->
+				            	<span class="fa fa-navicon fa-2x "></span>  <!-- MENU  HAMBURGUESA CON UN SOLO ICONO -->
 			              	</button> 
-			            	<a class="navbar-brand text-blanco" href="home"><img class="logo" src="image/user-r.png" alt=""></a>
+			            	<a class="text-blanco" href="home"><img class="logo navbar-brand" src="image/user-r.png" alt=""></a>
 		            		</div>
 		            	<div class="collapse navbar-collapse" id="barra1">
 		              		<ul class="nav navbar-nav navbar-right">
-							    <li><a href="#oferta" class="text-white pull-right">¿Qué me ofrece?</a></li>
-							    <li><a href="#funciona" class="text-white pull-right" >¿Cómo funciona</a></li>
-							    <li><a href="#usarlo" class="text-white pull-right">¿Porqué usarlo?</a></li>
-							    <li><a href="#contacto" class="text-white pull-right">Contactanos</a></li>
+							    <li><a href="#oferta" class="text-white">¿Qué me ofrece?</a></li>
+							    <li><a href="#ejemplo" class="text-white" >¿Cómo funciona</a></li>
+							    <li><a href="#porque" class="text-white">¿Porqué usarlo?</a></li>
+							    <li><a href="#contacto" class="text-white">Contactanos</a></li>
 		              		</ul>
 		           		 </div>
 	           			</div>
@@ -58,10 +60,26 @@
 						</a>
 					</div>
 					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pd-0 pl-5 pt-2">  
-						<a href="">
-						<div class="pull-left">		<h3 class="btn-prueba">Pruebalo gratis</h3>
-						</div>
-						</a>
+						<!-- BOTON DEL MODAL -->
+						<button type="button" class="btn btn-prueba" data-toggle="modal" data-target="#Modal">Pruebalo gratis</button>
+						<div id="Modal" class="modal fade" role="dialog">
+						  	<div class="modal-dialog"> 
+						    	<div class="modal-content">
+						     		<div class="modal-header">
+						        		<button type="button" class="close" data-dismiss="modal">&times;</button> <!-- BOTON X ARRIBA A LA DERECHA DEL MODAL -->
+						        		<h4 class="modal-title">Formulario User Testing 360</h4>
+						     	 	</div>
+							      	<div class="modal-body">
+							        	<h5>Nombre</h5> <input type="	">
+							        	<h5>Email</h5> <input type="	">
+							      	</div>
+					      			<div class="modal-footer text-center">
+					      				<p>Enviaremos a tu email un link en el que podras descargar y configurar el programa</p>
+					        			<button type="button" class="btn btn-default text-center" data-dismiss="modal">Close</button>
+					      			</div>
+						  	 	</div>
+						  	</div>
+						</div> <!-- TERMINA EL MODALLLLLL -->
 					</div>
 				</div>
 			</div>
@@ -70,81 +88,104 @@
 		<section>
 			<div class="container">
 				<div class="row text-center">
-					<h1 class="text-blue">Nuestros Servicios</h1>
+					<a name="oferta"><h1 class="text-blue">Nuestros Servicios</h1></a>
 				</div>
 				<div class="row">
-					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-						<div class="circulo text-center"> <!-- CIRCULO-->
-							<span class="icon-video icon-big "></span> <!-- ICONOOOOOO! -->
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 rel">
+						<div class=" row text-center mt-5 "> <!-- CIRCULO-->
+							<span class="icon-video icon-big circulo animated "></span> <!-- ICONOOOOOO! -->
 						</div>
 						<div class="row text-center">	
 							<h3 class="text-blue">Pruebalo gratis <br></h3> <br>
 							<p> Obtén un primer video screencaste de un usuario navegando tu página.</p>
 						</div>
 					</div>
-					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-						<div class="circulo text-center"> <!-- CIRCULO -->
-							<span class="icon-clock icon-big"></span> 
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 rel ">
+						<div class=" row text-center mt-5 "> <!-- CIRCULO -->
+							<span class="icon-clock icon-big circulo animated "></span> 
 						</div>
 						<div class="row text-center pd-2 pd-2">	
 							<h3 class="text-blue">Compra el servicio completo gratis</h3> <br>
 							<p> Obtén un primer video screencaste de un usuario navegando tu página.</p>
 						</div>
 					</div>
-					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
-						<div class="circulo text-center"> <!-- CIRCULO -->
-							<span class="icon-documents icon-big"></span> <!-- ICONOOOOOO! -->
+					<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 rel ">
+						<div class="text-center mt-5"> <!-- CIRCULO -->
+							<span class="icon-documents icon-big circulo animated"></span> <!-- ICONOOOOOO! -->
 						</div>
 						<div class="row text-center pd-2">	
-								<h3 class="text-blue">Obtén el resultado en 1 día</h3> <br>
-								<p> Obtén un primer video screencaste de un usuario navegando tu página.</p>
+							<h3 class="text-blue">Obtén el resultado en 1 día</h3> <br>
+							<p> Obtén un primer video screencaste de un usuario navegando tu página.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<hr> <!-- ICONITO HEXAGONAL -->
+		<div class="mt-5 mb-5">
+			<hr class="rel"> <!-- ICONITO HEXAGONAL -->
+			<div class="separador"><img class="separador animated infinite" src="image/separador.png" alt=""></div>
+		</div>
 		<div class="container"><!--  CONTAINER GRANDOTE que cubre varias section -->
-		<section name="">
-			<div class="row">
-				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
-					<h1 class="text-cyan">Ejemplo de <img class="logo" src="image/logo-2.jpg" alt=""></h1>
+		<section>
+			<div class="row pt-0 pb-2">
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<a name="ejemplo"><h1 class="text-cyan">Ejemplo de <img class="logo" src="image/logo-2.jpg" alt=""></h1></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+					<a href=>www.mimediamanzana.com</a>		
 					<p>Delectus veniam ipsam fugit vel incidunt, natus obcaecati quo sunt modi dicta, dolores, neque nulla qui officia doloremque laudantium est ipsum at.</p>
+					<div class="row">	
+						<div id="contflecha" class="container">
+							<img class="text-center img-responsive" id="flecha" src="image/flecha.png" alt="">
+						</div>
+					</div>
 				</div>
-				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
-					<iframe src="" frameborder="0"></iframe>
+				<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+					<div class="row">	
+	    				<iframe src="https://player.vimeo.com/video/180159377" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    				</div>
 				</div>
 			</div>
-			<hr>
 		</section>
 		<section>
 			<div class="row">
-				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
-					<img class="fit" src="image/sec-2.jpg" alt="">
-				</div>
-				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-					<h2>Lo quiero. ¿Qué hago?</h2>
-					<h3>Paso 1: Envianos tu link</h3>
-						<p>Al darle click al botón de prueba, coloca tu nombre y tu correo electrónico a donde enviaremos el video y el informe con el feedback.</p>
-					<h3>Paso 2: Describe a tu público objetivo</h3>
-						<p>Describe las acciones que quieres que evaluemos, por ejemplo:</p>
+				<hr class="m-0 pd-0">	
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pd-0">
+					<img class="fit pd-0 m-0" src="image/sec-2.jpg" alt="">
+				</div>   <!-- ICONITO HEXAGONAL -->
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pl-5">
+					<h2 class="pb-2">Lo quiero. ¿Qué hago?</h2>
+					<div class="abs">
+						<span class="icon-pencil icon-medium "></span> <!-- ICONITOS  -->
+					</div>
+					<h4 class="text-cyan">Paso 1: Envianos tu link</h4>
+						<p class="pb-2">Al darle click al botón de prueba, coloca tu nombre y tu correo electrónico a donde enviaremos el video y el informe con el feedback.</p>
+					<div class="abs">
+						<span class="icon-gears icon-medium"></span> <!-- ICONITOS  -->
+					</div>
+					<h4 class="text-cyan">Paso 2: Describe a tu público objetivo</h4>
+						<p >Describe las acciones que quieres que evaluemos, por ejemplo:</p>
 						<ul>
 							<li>A primera vista, ¿de qué crees que se trata la página?</li>
 							<li>¿Es fácil o difícil leer los textos?</li>
 							<li>Busca el botón de inscribirte ó comprar</li>
 						</ul>
-						<p>Puedes hacer preguntas como las que te mostramos</p>
-					<h3>Paso 3: Recibe un video y el feedback completo</h3>
-					<p>Recibe un combo de 7 videos y un informe detallado con las captaciones de usabilidad de tu producto</p>
+						<p class="pb-2">Puedes hacer preguntas como las que te mostramos</p>
+					<div class="abs">
+						<span class="icon-magnifying-glass icon-medium"></span>
+					</div> <!-- ICONITOS  -->
+					<h4 class="text-cyan">Paso 3: Recibe un video y el feedback completo</h4>
+					<p class="pb-2">Recibe un combo de 7 videos y un informe detallado con las captaciones de usabilidad de tu producto</p>
 				</div>
 			</div>
-			<hr>
+			<div class="pt-5">
+				<hr class="rel"> <!-- ICONITO HEXAGONAL -->
+				<span><img class="separador animated infinite" src="image/separador.png" alt=""></span>
+			</div>
 		</section>
 		<section>
-			<div class="row">
+			<div class="row pt-5">
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 ">
-					<h1>Porqué usar <img class="logo" src="image/logo-2.jpg" alt=""></h1>
+					<a name="porque"></a><h1 class="text-cyan">Porqué usar <img class="logo" src="image/logo-2.jpg" alt=""></h1></a>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 					Delectus veniam ipsam fugit vel incidunt, natus obcaecati quo sunt modi dicta, dolores, neque nulla qui officia doloremque laudantium est ipsum at.</p>
 					<ul>
@@ -154,33 +195,31 @@
 					</ul>
 					<p><a href="">"User Testing 360" te ayudará a responder estas preguntas y muchas más. Es el toque final perfecto para tu p{agina o producto digital.</a></p>
 				</div>
-				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center">
-					<iframe src="" frameborder="0"></iframe>
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+					<img class="fit" src="image/banner.jpg" alt="">
+
 				</div>
 			</div>
 		</section>
 		</div> <!-- TERMINA CONTAINER GRANDOTE -->
 			<div class="row fondoazul pb-2 mt-5">
-					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pd-0">
-						<a href="">
-						<div class="pull-right text-center pt-2">
-							<h2 class="text-white" >PRUEBA GRATUITA</h2>
-							<h4 class="text-white">Obtén un video gratis de 5 minutos</h4>
-						</div>
-						</a>
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pd-0">
+					<a href="">
+					<div class="pull-right text-center pt-2">
+						<h2 class="text-white" >PRUEBA GRATUITA</h2>
+						<h4 class="text-white">Obtén un video gratis de 5 minutos</h4>
 					</div>
-					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pd-0 pl-5 pt-2">  
-						<a href="">
-							<div class="pull-left text-white text-center btn-prueba">	Pruebalo gratis
-							</div>
-						</a>
-					</div>
+					</a>
 				</div>
+				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 pd-0 pl-5 pt-2">  
+					<button type="button" class="btn btn-prueba" data-toggle="modal" data-target="#Modal">Pruebalo gratis</button>
+				</div>
+			</div>
 		<footer>
 			<div class="row fondoazulosc pd-0">
 				<div class="col-xl-6 col-lg-6 col-md-12 col-sm-6 col-xs-12">
 					<h4 class="text-white">Escribenos a:</h4>
-					<a href="">experienciadeusuario.lab@gmail.com</a>
+					<a href="contact.html" target="_blank">experienciadeusuario.lab@gmail.com</a>
 					<h4 class="text-white">Tel: 000-0000</h4>
 					<a href="">
 				</div>
@@ -188,7 +227,7 @@
 					<div> 	
 						<span></span> <!-- ICONO FACEBOOK -->
 						<span></span> <!-- ICONO TWITTER -->
-						<h5 class="pull-right">Copyright 2015 - UserTesting320</h5>
+						<h5 class="text-right">Copyright 2015 - UserTesting320</h5>
 					</div>
 				</div>
 			</div>
