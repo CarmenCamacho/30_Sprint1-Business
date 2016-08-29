@@ -169,6 +169,8 @@
      padding: 20%;
      animation-play-state: paused;
      animation: pulse;
+     max-width: 8em !important;
+     max-height: 8em !important;
 }
 
 .circulo:hover{
@@ -238,8 +240,6 @@ div.abs{
 		width: 600px;
 		height: 300px;
 		background-color: grey;
-		margin-top: 40px;
-		margin-left: 60px;
 }
 
 
